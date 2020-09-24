@@ -1,0 +1,96 @@
+% % University of Minnesota Beamer Template
+%\documentclass[handout]{beamer} % Uncomment to get handouts
+\documentclass[10pt,xcolor=dvipsnames]{beamer}
+
+\usepackage{graphicx}
+%\usepackage{newcent}
+\usepackage{palatino}
+%\usepackage[scaled]{helvet}
+
+\mode<presentation>{%
+
+\xdefinecolor{GopherMaroon}{HTML}{7A0019}
+\xdefinecolor{GopherGold}{HTML}{FFCC33}
+\xdefinecolor{GopherLightGold}{HTML}{FFDE7A}
+\xdefinecolor{GopherDarkMaroon}{HTML}{5B0013}
+
+%\usecolortheme[named=GopherMaroon]{structure}
+\usecolortheme[named=GopherGold]{structure}
+
+\usecolortheme{rose}
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+
+\useinnertheme{rounded}
+\usefonttheme[onlylarge]{structurebold}
+
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[circle]
+\setbeamertemplate{note page}[plain2]
+
+\setbeamercolor{section in head/foot}{fg=GopherDarkMaroon,bg=GopherGold}
+\setbeamercolor{frametitle}{fg=GopherMaroon,bg=GopherGold}
+\setbeamercolor{normal text}{fg=White,bg=GopherMaroon}
+
+% % % % Get rid of the navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%\logo{\includegraphics[width=1.5in]{graphics/WMmaroongoldwide.png}}
+\logo{\includegraphics[width=1.2in]{graphics/goldWM.png}}
+}
+
+
+%%% Put a title slide at the beginning of each section
+
+%\AtBeginSection[]
+%{
+%   \begin{frame}
+%       \tableofcontents[currentsection]
+%       %\titlepage[currentsection]
+%   \end{frame}
+%}
+
+\title[Short Title]{Your Title Here}
+\author[Your name]{Your name}
+\institute{Division of Biostatistics\\ University of Minnesota}
+\date[Event]{Event Title/Date}
+
+\begin{document}
+
+%%%
+\begin{frame}
+\titlepage
+\ \ \ \ \includegraphics[width=1.5in]{graphics/goldylean.png}
+\end{frame}
+
+%%%%%%%%%
+\section[First Section]{First Section}
+\subsection{}
+
+%%%
+\begin{frame}
+\frametitle{Example frame}
+
+\begin{itemize}
+\item Item 1
+\item Item 2
+\item Item 3
+\begin{itemize}
+\item Subitem 1
+\item Subitem 2
+\end{itemize}
+\end{itemize}
+
+\pause
+
+\begin{block}{A block}
+Some text inside a block
+\end{block}
+
+\end{frame}
+
+%%%
+
+\end{document}
+
